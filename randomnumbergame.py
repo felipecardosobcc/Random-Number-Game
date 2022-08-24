@@ -17,10 +17,15 @@ print()
 
 if controle.lower() == "ok":
     num_sorteado = randint(1, 100)
-    print("--Informe o nível de dificuldade do jogo--")
-    print("="*42)
-    print("FÁCIL -> Com dicas e chances ilimitadas.\nDIFÍCIL -> Com dicas e apenas 6 chances.\nHARDCORE -> Sem dicas e apenas 3 chances.")
-    print("="*42)
+    print("   --Informe o nível de dificuldade do jogo--")
+    print("="*48)
+    texto = '''
+    FÁCIL -> Com dicas e chances ilimitadas.
+    DIFÍCIL -> Com dicas e apenas 6 chances.
+    HARDCORE -> Sem dicas e apenas 3 chances.
+    '''
+    print(texto)
+    print("="*48)
     dificuldade = input("Digite 'F' para fácil, 'D' para difícil ou 'H' para hardcore:\n")
     print()
     if dificuldade.upper() == "F":
